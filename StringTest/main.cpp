@@ -7,9 +7,16 @@
 //
 
 #include <iostream>
+#include <string>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main()
+{
+    string str = "qweasdzxc";
+    for (auto &c : str ) { //使用引用，改变的是字符串str的值
+        c = 'X';
+        
+    }
+    cout << str << endl;
     return 0;
 }
